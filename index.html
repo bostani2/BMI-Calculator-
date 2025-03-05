@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محاسبه‌گر شاخص توده بدنی</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div dir="rtl" class="app-container">
+      <div class="body-container">
+        <div class="content-wrapper">
+          <div class="content-container">
+            <header class="page-header"></header>
+            <main class="main-content">
+              <div class="calculator-container">
+                <div class="calculator-wrapper">
+                  <div class="input-column">
+                    <div class="input-section">
+                      <div class="section-header">
+                        <h1 class="main-title">
+                          شاخص توده بدنی خود را محاسبه کنید
+                        </h1>
+                        <p class="subtitle">مشخصات خود را در زیر وارد کنید</p>
+                      </div>
+                      <div
+                        role="radiogroup"
+                        aria-label="Unit selection"
+                        class="unit-selector"
+                      >
+                        <button
+                          class="unit-button metric-button"
+                          role="radio"
+                          aria-checked="true"
+                        >
+                          <span>متریک</span>
+                        </button>
+                        <button
+                          class="unit-button imperial-button"
+                          role="radio"
+                          aria-checked="false"
+                        >
+                          <span>امپریال</span>
+                        </button>
+                      </div>
+                      <div class="input-fields">
+                        <div class="input-group">
+                          <label class="input-label">قد (سانتی‌متر)</label>
+                          <div class="input-wrapper">
+                            <input
+                              type="text"
+                              class="text-input height-input"
+                              placeholder="قد را وارد کنید"
+                              aria-label="Height in centimeters"
+                            />
+                            <span class="unit-indicator">cm</span>
+                          </div>
+                        </div>
+                        <div class="input-group">
+                          <label class="input-label">وزن (کیلوگرم)</label>
+                          <div class="input-wrapper">
+                            <input
+                              type="text"
+                              class="text-input weight-input"
+                              placeholder="وزن را وارد کنید"
+                              aria-label="Weight in kilograms"
+                            />
+                            <span class="unit-indicator">kg</span>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="calculate-button">
+                        <span class="button-text">محاسبه شاخص</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="results-column">
+                    <div class="results-container">
+                      <div class="results-header">
+                        <h2 class="results-title">شاخص توده بدنی شما</h2>
+                        <div class="bmi-value">
+                          <span class="bmi-number">اطلاعات را وارد کنید</span>
+                        </div>
+                        <p class="bmi-status">محاسبه توده بدنی شما</p>
+                      </div>
+                      <div class="bmi-scale">
+                        <div class="scale-bar">
+                          <div class="scale-section underweight"></div>
+                          <div class="scale-section normal"></div>
+                          <div class="scale-section overweight"></div>
+                          <div class="scale-indicator"></div>
+                        </div>
+                        <div class="scale-labels">
+                          <span class="scale-label">چاق</span>
+                          <span class="scale-label">اضافه‌وزن</span>
+                          <span class="scale-label">طبیعی</span>
+                          <span class="scale-label">کم‌وزن</span>
+                        </div>
+                      </div>
+                      <div class="health-tips">
+                        <h3 class="tips-title">توصیه‌های سلامتی</h3>
+                        <ul class="tips-list">
+                          <li class="tip-item">
+                            <div class="tip-icon">
+                              <img
+                                src="https://cdn.builder.io/api/v1/image/assets/87107ee0160e4263889c13040584b8ba/0bb838ac33c73c2d3b09c198a6b3cc043947c28bcbcb0df2e224da78eeb8aa21?placeholderIfAbsent=true"
+                                alt=""
+                              />
+                            </div>
+                            <span class="tip-text"
+                              >رژیم غذایی متعادل داشته باشید</span
+                            >
+                          </li>
+                          <li class="tip-item">
+                            <div class="tip-icon">
+                              <img
+                                src="https://cdn.builder.io/api/v1/image/assets/87107ee0160e4263889c13040584b8ba/a7f103f32b9184ff70c86523e32131a70e9b1c918230d695f68cd28702efe073?placeholderIfAbsent=true"
+                                alt=""
+                              />
+                            </div>
+                            <span class="tip-text">ورزش منظم انجام دهید</span>
+                          </li>
+                          <li class="tip-item">
+                            <div class="tip-icon">
+                              <img
+                                src="https://cdn.builder.io/api/v1/image/assets/87107ee0160e4263889c13040584b8ba/a128173dcd232cd688ebabd3eab43e46de03e1476f872fbef2485de62267b61e?placeholderIfAbsent=true"
+                                alt=""
+                              />
+                            </div>
+                            <span class="tip-text">آب کافی بنوشید</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+            <footer class="page-footer">
+              <p class="copyright">
+                © ۲۰۲۵ محاسبه‌گر شاخص توده بدنی. تمامی حقوق محفوظ است.
+              </p>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://cdn.builder.io/api/v1/pixel?apiKey=87107ee0160e4263889c13040584b8ba"
+        aria-hidden="true"
+        alt=""
+        role="presentation"
+        width="0"
+        height="0"
+        class="hidden-image"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
